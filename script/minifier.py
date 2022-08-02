@@ -6,7 +6,7 @@ def single_file(path):
     print("doning on --> ", path)
     import os
     file_name, file_ext = os.path.splitext(path)
-    if file_ext == '.js' and file_name != 'prism':
+    if file_ext == '.js' and file_name != 'js/prism':
         do_js(path)
     if file_ext == '.css':
         do_css(path)
